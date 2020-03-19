@@ -52,19 +52,19 @@ class Person1 {
 
   @Override
   public String toString() {
-    return "Person{" + "name='" + name +'\'' + ", age=" + age + '}';
+    return "Person{" + "name='" + name + '\'' + ", age=" + age + '}';
   }
 }
 
 class PersonComparator implements Comparator {
   @Override
   public int compare(Object obj1, Object obj2) {
-    Person1 p1 = (Person1)obj1;
-    Person1 p2 = (Person1)obj2;
+    Person1 p1 = (Person1) obj1;
+    Person1 p2 = (Person1) obj2;
 
-    if(p1.age > p2.age) {
+    if (p1.age > p2.age) {
       return 1;
-    } else if(p1.age < p2.age) {
+    } else if (p1.age < p2.age) {
       return -1;
     }
     return p1.name.compareTo(p2.name);
